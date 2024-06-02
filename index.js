@@ -1,5 +1,6 @@
- 
-  console.log("work")
+ let body = document.querySelector("body");
+ body.appendChild(container);
+ body.innerHTMl = container;
   const container = document.createElement("div");
   container.classList.add("container");
 
@@ -28,12 +29,12 @@
 
   const down = document.createElement("button");
   down.setAttribute("id","down");
-  left.textContent ="Down";
+  down.textContent ="Down";
 
 
   const reset = document.createElement("button");
   reset.setAttribute("id","reset");
-  left.textContent ="Reset";
+  reset.textContent ="Reset";
 
 
   const controls = document.createElement("div");
