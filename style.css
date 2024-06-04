@@ -1,22 +1,29 @@
 body{
-    height: 1000px;
+    height: 1000vh;
+    
+    
+    
 }
 .container{
-    background-color: #d80c0c;
+    background-color: rgb(199, 49, 49);
     color: black;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    max-height: 800;
-    width: 500;
+    font-size: 10px;
+    max-height: 100vh;
+    width: 100vh;
     display: flex;
     margin: 0;
+     flex-direction:column ;
+     border-radius: 30px;
 }
 
 .etch{
     max-height: fit-content;
     margin:1px;
     border: 2px solid black;
-
+    height : 50vh;
+    width: 80vh;
+    background-color: aliceblue;
 }
 .square{
     height:4px 4px ;
@@ -24,10 +31,61 @@ body{
     margin: 0;
     padding: 0; 
 }
-#left.button,#right.button,#up.button,#down.button,#reset.button{
+.black{
     height: 30px;
+    background-color: black;
+    color: white;
+    width: 60px;
+
+}
+.hue{
+height:30px;
+background-color: blueviolet;
+color: white;
+width: 60px;
+}
+.eraser{
+    height: 30px;
+    width: 60px;
+    background-color: white;
+
+}
+.left{
+    height: 50px;
+    border-radius: 50%;
+    width: 50px;
+    
+}
+ 
+.right{
+  height: 50px; 
+  border-radius: 50%; 
+  width: 50px;
 }
 
+.up{
+    height: 50px;
+    border-radius: 50%;
+    width: 50px;
+}
 
+.down{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.reset{
+    height: 50px;
+    border-radius: 50%;
+    width: 50px;
+}
+.controls{
+    height: 10vh;
+    border: 1px solid springgreen;
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-around;
+padding-top: 2vh;
+}
 /*nav a.selected, nav :hover
 nav a, nav a:visited 
