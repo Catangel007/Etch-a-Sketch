@@ -1,12 +1,14 @@
 body{
-    height: 1000vh;
+    height: 200vh;
+    width: 200vh;
+    text-align: center;
 }
 .container{
     background-color: rgb(199, 49, 49);
     color: black;
     font-size: 10px;
     height: auto;
-    width: 200vh;
+    width: 152.5vh;
     display: flex;
     margin: 0;
      flex-direction:column ;
@@ -22,56 +24,55 @@ body{
     background-color: aliceblue;
     display: flex;
     flex-direction: row;
-    
     flex-flow: wrap;
     
    
 }
 
-.black{
+#black{
     height: 30px;
     background-color: black;
     color: white;
     width: 60px;
 
 }
-.hue{
+#hue{
 height:30px;
 background-color: blueviolet;
 color: white;
 width: 60px;
 }
-.eraser{
+#eraser{
     height: 30px;
     width: 60px;
     background-color: white;
 
 }
-.left{
+#left{
     height: 50px;
     border-radius: 50%;
     width: 50px;
     
 }
  
-.right{
+#right{
   height: 50px; 
   border-radius: 50%; 
   width: 50px;
 }
 
-.up{
+#up{
     height: 50px;
     border-radius: 50%;
     width: 50px;
 }
 
-.down{
+#down{
     height: 50px;
     width: 50px;
     border-radius: 50%;
 }
-.reset{
+#reset{
     height: 50px;
     border-radius: 50%;
     width: 50px;
@@ -102,7 +103,7 @@ h2{
 .partAControls{
     display: flex;
     flex-direction: column;
-    height: 100px;
+   
     align-items: center;
     width:auto;
 }
