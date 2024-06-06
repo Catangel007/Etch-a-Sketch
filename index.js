@@ -18,7 +18,7 @@ const eraser = document.querySelector('button.eraser')
         let div = document.createElement('div');
         div.style.height ="10px";
         div.style.width = "10px";
-        div.style.backgroundColor = "blue";
+        div.style.backgroundColor = sketch;
         div.style.border = "solid";
         etch.appendChild(div);
         div.setAttribute('id',`draw${i}`);
@@ -76,21 +76,26 @@ const eraser = document.querySelector('button.eraser')
     
     }
   })
+    
+  function getRandomColor(){
+    let num = '123456789ABCDEF';
+    let color = '#';
 
-  etch.addEventListener("mouseover", (e) => {
-    let target = e.target.id;
-    target== getRandomColor();
-    return target;
+    for (let i= 1; i < 7; i++){
+     color += num[Math.floor(Math.random()*15)];
+     
+    } 
+    
+  }
   
-    })
-   
 
-    function getRandomColor(){
-     let num = '123456789ABCDEF'
-     let color = '#'
-
-     for (let i= 0; i < 6; i++){
-      color += num[Math.floor(Math.random()*16)];
-     }
-      target.style.backgroundColor = color;
-    }getRandomColor();
+  function sketch (){
+    let hex = '';
+  etch.addEventListener("mouseover", (e) => {
+     hex = e.target.id;
+     console.log(hex);
+    hex += getRandomColor()
+    })   
+  }
+  sketch()
+  console.log(sketch());
