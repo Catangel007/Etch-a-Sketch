@@ -11,12 +11,11 @@ body{
     width: 152.5vh;
     display: flex;
     margin: 0;
-     flex-direction:column ;
-     border-radius: 30px;
+    flex-direction:column ;
+    border-radius: 30px;
 }
 
-.etch{
-   
+.etch{  
     margin:1px;
     border: 2px solid black;
     height :auto;
@@ -24,9 +23,7 @@ body{
     background-color: aliceblue;
     display: flex;
     flex-direction: row;
-    flex-flow: wrap;
-    
-   
+    flex-flow: wrap; 
 }
 
 #black{
@@ -34,8 +31,8 @@ body{
     background-color: black;
     color: white;
     width: 60px;
-
 }
+
 #hue{
 height:30px;
 background-color: blueviolet;
@@ -72,11 +69,14 @@ width: 60px;
     width: 50px;
     border-radius: 50%;
 }
+
 #reset{
     height: 50px;
     border-radius: 50%;
     width: 50px;
 }
+
+
 .controls{
     height: 10vh;
     border: 1px solid springgreen;
@@ -86,13 +86,14 @@ width: 60px;
     padding-top: 2vh;
 }
 
+
 h2{
     width: 100vh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    
-
 }
+
+
 .partA{
     display:flex;
     flex-direction: row;
@@ -100,12 +101,13 @@ h2{
     margin-left: 4vh;
     margin-right: 4vh;
 }
+
+
 .partAControls{
     display: flex;
     flex-direction: column;
-   
     align-items: center;
     width:auto;
 }
 /*nav a.selected, nav :hover
-nav a, nav a:visited 
+nav a, nav a:visited */
