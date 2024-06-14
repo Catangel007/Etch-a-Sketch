@@ -5,7 +5,7 @@ const eraser = document.querySelector('#eraser')
   let etch = document.querySelector(".etch");
   
   // div creation from prompt input
- box = parseInt(prompt("How many squares do you want to build?\n Choose a number from 30 to 100")
+ box = parseInt(prompt("Choose a number from 30 to 100 to build")
  );
  let hex = '';
   
@@ -15,15 +15,15 @@ const eraser = document.querySelector('#eraser')
         let div = document.createElement('div');
         div.style.height ="10px";
         div.style.width = "10px";
-        //div.style.backgroundColor = getRandomColor();
         div.style.border = "solid";
         etch.appendChild(div);
         div.setAttribute('id',`draw${i}`);
-        
+       
     etch.addEventListener("mouseover", (e) => {
        hex = e.target;
+       
         switch(hex.id){
-          case `draw${i}`:
+          case `draw${i}`:  
           div.style.backgroundColor = getRandomColor();
           break;
         } 
@@ -39,7 +39,7 @@ const eraser = document.querySelector('#eraser')
           hex = e.target;
            switch(hex.id){
              case `draw${i}`:
-             div.style.backgroundColor = "white";  
+             div.style.backgroundColor = "white";
            } 
          }) 
              break;
@@ -49,7 +49,8 @@ const eraser = document.querySelector('#eraser')
             hex = e.target;
              switch(hex.id){
                case `draw${i}`:
-               div.style.backgroundColor = "black";  
+               div.style.backgroundColor = "black"; 
+
              } 
            }) 
                  break;
@@ -60,7 +61,7 @@ const eraser = document.querySelector('#eraser')
                  switch(hex.id){
                    case `draw${i}`:
                    div.style.backgroundColor = getRandomColor();
-                   
+    
                  } 
                }) 
                 break;     
@@ -98,16 +99,19 @@ const eraser = document.querySelector('#eraser')
         }
      })
 
+    //  function brightness(){
+    //     let light = 10;
+    //    let darken = div.style.getRandomColor().light(-10);
 
+    //  }brightness();
+       
+     
     }
   
 
 
      
-   
 
-  
-    
   function getRandomColor(){
     let num = '123456789ABCDEF';
     let color = '#';
@@ -116,6 +120,7 @@ const eraser = document.querySelector('#eraser')
      color += num[Math.floor(Math.random()*15)];
      
     }
+    
     return color;
      
   }getRandomColor()
